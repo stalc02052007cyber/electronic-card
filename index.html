@@ -1,84 +1,265 @@
+
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ky">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя Визитка</title>
-    <!-- Подключаем Tailwind CSS для быстрого и красивого дизайна -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Подключаем FontAwesome для иконок социальных сетей -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* Небольшая анимация для фона */
-        @keyframes gradient-xy {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-        }
-        .animate-gradient-xy {
-            background-size: 400% 400%;
-            animation: gradient-xy 10s ease infinite;
-        }
-    </style>
+    <meta name="theme-color" content="#f5f5f7">
+    <title>Physics QR Lab | Microscope</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gradient-to-br from-gray-900 via-slate-800 to-black min-h-screen flex items-center justify-center p-4 font-sans text-gray-100 animate-gradient-xy">
-    
-    <!-- Карточка визитки -->
-    <div class="bg-gray-800 border border-gray-700 rounded-3xl shadow-2xl p-8 max-w-sm w-full text-center relative overflow-hidden transition-transform hover:-translate-y-2 duration-300">
-        
-        <!-- Декоративный элемент сверху -->
-        <div class="absolute top-0 left-0 w-full h-32 bg-gradient-to-r from-blue-300 to-indigo-1200 opacity-80"></div>
+<body>
 
-        <!-- Фото профиля -->
-        <!-- Замените ссылку в src на ваше реальное фото -->
-        <img src="./image/DDAB9641.PNG" 
-             alt="Фото профиля" 
-             class="w-32 h-32 rounded-full mx-auto border-4 border-gray-800 shadow-lg relative z-10 mt-4 mb-4 object-cover">
+<header class="navbar">
+    <a href="#" class="logo"><span></span></a>
 
-        <!-- Основная информация -->
-        <h1 class="text-2xl font-bold text-white mb-1 relative z-10">Аллаберди Абдибахапов</h1>
-        <p class="text-blue-400 font-semibold text-sm tracking-wide uppercase mb-4 relative z-10">Веб-разработчик</p>
-        <p class="text-gray-400 text-sm mb-8 relative z-10 leading-relaxed">
-            Люблю создавать современные веб-приложения и помогать бизнесу расти с помощью технологий.
-        </p>
+    <nav>
+        <a href="#about">Маалымат</a>
+        <a href="#parts">Бөлүктөрү</a>
+        <a href="#formula">Формула</a>
+        <a href="#calculator">Калькулятор</a>
+    </nav>
 
-        <!-- Контактные данные -->
-        <div class="space-y-3 mb-8 relative z-10">
-            <!-- Телефон -->
-            <a href="tel:+996223113116" class="flex items-center justify-center gap-3 bg-gray-700/50 hover:bg-gray-600 text-gray-200 py-3 px-4 rounded-xl transition-all duration-300 border border-gray-600 hover:border-blue-400 group">
-                <i class="fas fa-phone text-blue-400 group-hover:text-white transition-colors"></i>
-                <span class="font-medium">+996 223 113 116</span>
-            </a>
-            
-            <!-- Email -->
-            <a href="mailto:allaberdiabdibahapov1@gmail.com" class="flex items-center justify-center gap-3 bg-gray-700/50 hover:bg-gray-600 text-gray-200 py-3 px-4 rounded-xl transition-all duration-300 border border-gray-600 hover:border-blue-400 group">
-                <i class="fas fa-envelope text-blue-400 group-hover:text-white transition-colors"></i>
-                <span class="font-medium">allaberdiabdibahapov1@gmail.com</span>
-            </a>
-            
-            <!-- Локация -->
-            <div class="flex items-center justify-center gap-3 text-gray-400 py-2 px-4">
-                <i class="fas fa-map-marker-alt text-red-400"></i>
-                <span>Бишкек, Кыргызстан</span>
-            </div>
+    <a href="#calculator" class="nav-button">Изилдөө баштоо ↗</a>
+</header>
+
+<main>
+
+<section class="hero">
+    <div class="hero-content">
+        <div class="eyebrow">
+            <span class="dot"></span>
+            PHYSICS EDUCATION PROJECT
         </div>
 
-        <!-- Социальные сети -->
-        <div class="flex justify-center gap-4 relative z-10">
-            <!-- Telegram -->
-            <a href="https://t.me/allaberdi_0" target="_blank" class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center text-xl hover:bg-[#0088cc] hover:text-white hover:scale-110 shadow-md transition-all duration-300">
-                <i class="fab fa-telegram-plane"></i>
-            </a>
-            <!-- Instagram -->
-            <a href="https://www.instagram.com/aalu.oo7?stkn=NGcyY2sxM2p5dTNz&utm_source=qr" target="_blank" class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center text-xl hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] hover:text-white hover:scale-110 shadow-md transition-all duration-300">
-                <i class="fab fa-instagram"></i>
-            </a>
-           
-            <!-- GitHub -->
-            <a href="https://github.com/stalc02052007cyber" target="_blank" class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center text-xl hover:bg-[#333] hover:text-white hover:scale-110 shadow-md transition-all duration-300">
-                <i class="fab fa-github"></i>
-            </a>
+        <h1>
+            Көзгө көрүнбөгөн<br>
+            дүйнөнү <span>ачыңыз.</span>
+        </h1>
+
+        <p>
+            Микроскоп — көзгө көрүнбөгөн майда объекттерди
+            чоңойтуп изилдөөгө мүмкүнчүлүк берген оптикалык прибор.
+            Илимдин дүйнөсүнө саякат ушул жерден башталат.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#about" class="primary-btn">Изилдеп көрүү ↗</a>
+            <a href="#formula" class="secondary-btn">Физикалык формула</a>
+        </div>
+
+        <div class="hero-stats">
+            <div>
+                <strong>1590</strong>
+                <small>Алгачкы микроскоптордун доору</small>
+            </div>
+            <div>
+                <strong>1000×</strong>
+                <small>Мисал катары чоңойтуу</small>
+            </div>
         </div>
     </div>
 
+    <div class="hero-image">
+        <img src="https://kolba24.ru/wp-content/uploads/2025/05/micmed-lcd.webp" alt="Оптикалык микроскоп">
+        <div class="image-label">
+            <span>01 / OPTICAL INSTRUMENT</span>
+            <strong>MICROSCOPE</strong>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="about">
+    <div class="section-heading">
+        <span>01 — INTRODUCTION</span>
+        <h2>Микроскоп деген эмне?</h2>
+        <p>Жөнөкөй оптика аркылуу чоң ачылыштар.</p>
+    </div>
+
+    <div class="about-grid">
+        <div class="about-card">
+            <span class="card-icon">🔬</span>
+            <h3>Аныктамасы</h3>
+            <p>
+                Микроскоп — линзалар системасынын жардамы менен
+                өтө майда нерселердин чоңойтулган көрүнүшүн
+                түзүүчү оптикалык прибор.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <span class="card-icon">⚙️</span>
+            <h3>Иштөө принциби</h3>
+            <p>
+                Объектив объекттин чоңойтулган аралык сүрөтүн түзөт.
+                Окуляр ошол сүрөттү чоңойтуп көрүүгө жардам берет.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <span class="card-icon">🧬</span>
+            <h3>Колдонулушу</h3>
+            <p>
+                Микроскоптун физикадагы иштөө принциби.
+                <br>
+                Микроскоп — көзгө көрүнбөгөн өтө кичинекей нерселерди чоңойтуп көрсөтүүчү оптикалык аспап. Анын иштеши жарыктын сынуу кубулушуна жана линзалар аркылуу сүрөттөлүштүн пайда болушуна негизделет.
+            </br>
+                
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="section parts-section" id="parts">
+    <div class="section-heading">
+        <span>02 — STRUCTURE</span>
+        <h2>Микроскоптун түзүлүшү</h2>
+        <p>Негизги бөлүктөрү жана алардын милдеттери.</p>
+    </div>
+
+    <div class="parts-grid">
+        <article class="part-card">
+            <div class="part-number">01</div>
+            <h3>Окуляр</h3>
+            <p>Көз менен карай турган линза. Объектив түзгөн сүрөттү чоңойтот.</p>
+        </article>
+
+        <article class="part-card">
+            <div class="part-number">02</div>
+            <h3>Объектив</h3>
+            <p>Изилденүүчү объекттин чоңойтулган сүрөтүн түзөт.</p>
+        </article>
+
+        <article class="part-card">
+            <div class="part-number">03</div>
+            <h3>Предметтик үстөлчө</h3>
+            <p>Изилденүүчү препарат жайгаштырылуучу бөлүк.</p>
+        </article>
+
+
+<article class="part-card">
+            <div class="part-number">04</div>
+            <h3>Жарык булагы</h3>
+            <p>Объектти жарыктандырып, көрүүгө жардам берет.</p>
+        </article>
+
+        <article class="part-card">
+            <div class="part-number">05</div>
+            <h3>Фокус жөндөөчү бурама</h3>
+            <p>Сүрөттүн тактыгын жөндөйт.</p>
+        </article>
+
+        <article class="part-card">
+            <div class="part-number">06</div>
+            <h3>Штатив</h3>
+            <p>Микроскоптун негизги бөлүктөрүн кармап турат.</p>
+        </article>
+    </div>
+</section>
+
+<section class="formula-section" id="formula">
+    <div class="formula-info">
+        <span>03 — PHYSICS</span>
+        <h2>Чоңойтуу формуласы</h2>
+        <p>
+            Микроскоптун жалпы чоңойтуусу объективдин жана
+            окулярдын чоңойтуу көрсөткүчтөрүнүн көбөйтүндүсүнө барабар.
+        </p>
+    </div>
+
+    <div class="formula-box">
+        <span>НЕГИЗГИ ФОРМУЛА</span>
+        <div class="formula">Γ = Γ₁ × Γ₂</div>
+        <p>
+            Γ — жалпы чоңойтуу<br>
+            Γ₁ — объективдин чоңойтуусу<br>
+            Γ₂ — окулярдын чоңойтуусу
+        </p>
+        <div class="example">
+            Мисалы: 40×10 = <strong>400×</strong>
+        </div>
+    </div>
+</section>
+
+<section class="section calculator-section" id="calculator">
+    <div class="section-heading">
+        <span>04 — INTERACTIVE LAB</span>
+        <h2>Өзүң эсептеп көр!</h2>
+        <p>Объектив менен окулярдын көрсөткүчтөрүн танда.</p>
+    </div>
+
+    <div class="calculator">
+        <div class="calc-input">
+            <label for="objective">Объективдин чоңойтуусу</label>
+            <select id="objective">
+                <option value="4">4×</option>
+                <option value="10">10×</option>
+                <option value="40" selected>40×</option>
+                <option value="100">100×</option>
+            </select>
+
+            <label for="eyepiece">Окулярдын чоңойтуусу</label>
+            <select id="eyepiece">
+                <option value="5">5×</option>
+                <option value="10" selected>10×</option>
+                <option value="15">15×</option>
+                <option value="20">20×</option>
+            </select>
+
+            <button id="calculateBtn">Эсептөө →</button>
+        </div>
+
+        <div class="calc-result">
+            <span>ЖАЛПЫ ЧОҢОЙТУУ</span>
+            <div id="result">400×</div>
+            <p id="resultText">Объект 400 эсе чоңойтулат.</p>
+            <div class="result-line"></div>
+            <small>Формула: Γ = Γ₁ × Γ₂</small>
+        </div>
+    </div>
+</section>
+
+<section class="video-section" id="video">
+    <div>
+        <span>05 — VIDEO LESSON</span>
+        <h2>Микроскоп кандай иштейт?</h2>
+        <p>
+            Микроскоптун түзүлүшүн жана иштөө принцибин
+            видеосабак аркылуу үйрөн.
+        </p>
+        <a
+          class="primary-btn"
+          href="https://www.youtube.com/results?search_query=how+does+a+compound+microscope+work"
+          target="_blank"
+          rel="noopener"
+        >Видеону көрүү ↗</a>
+    </div>
+    <div class="video-placeholder">
+        <div class="play-icon">▶</div>
+        <span>MICROSCOPE • VIDEO LESSON</span>
+    </div>
+</section>
+
+<section class="qr-section">
+    <span>06 — DIGITAL ACCESS</span>
+    <h2>Physics QR Lab</h2>
+    <p>Бул лабораторияга QR-код аркылуу кирүүгө болот.</p>
+
+    <div class="qr-card">
+        <img id="qrImage" alt="Долбоордун QR коду">
+        <p>Телефонуң менен сканерле.</p>
+        <button id="qrBtn">QR-код түзүү</button>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <a href="#" class="logo">PHY<span>LAB.</span></a>
+    <p>Physics QR Lab — Билимдин санарип дүйнөсү.</p>
+    <small>Student Educational Project • 2026</small>
+</footer>
+
+<script src="script.js"></script>
 </body>
-</html>
+</html> 
